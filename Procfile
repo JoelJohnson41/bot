@@ -1,2 +1,2 @@
-worker: python reddit-60.py 
+worker: python Reddit-60.py 
 
