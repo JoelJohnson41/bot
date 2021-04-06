@@ -13,7 +13,7 @@ password = 'johnson_chemistry11')
 temp = Template('Hey, I was scrolling through  $subreddit and noticed your comment. There is this site called https://fan.reviews, its a site where you can leave reviews on any influencer/creator/onlyfans model, etc. You should leave a review for someone there. Its a great way to let them know if they are awesome or not so awesome. Its like Yelp for Creators.')
 
 
-    def check_author(author):
+def check_author(author):
     
     file_read = open("comment_list.txt",'r+')
     
@@ -60,7 +60,7 @@ for search in searches:
                                 print(author)
                                 reddit.redditor(author).message('Review', message)
                                 print("Message sent")
-                                reddit.redditor(author).message('Review', message)
+                                
                                 
                                 message_list = open("comment_list.txt",'a+')
                                 message_list.write('\n' + author)
