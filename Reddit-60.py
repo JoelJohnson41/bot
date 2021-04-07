@@ -55,7 +55,7 @@ while (i>0):
                                 if check2 == 0:
 
                                     print(comment.author)
-                                    #reddit.redditor(author).message('Check out my body', message)
+                                    reddit.redditor(author).message('Check out my body', message)
                                     
                                     print("Message sent")
                                                 
