@@ -21,7 +21,7 @@ def check_author(author):
     
     for line in file_read.readlines():
         
-        if line == (author + '\n'):
+        if author in line:
             
             file_read.close()
             
@@ -55,9 +55,13 @@ while (i>0):
                                 if check2 == 0:
 
                                     print(comment.author)
-                                    #reddit.redditor(author).message('Review', message)
+                                    reddit.redditor(author).message('Review', message)
                                     
                                     print("Message sent")
+                                    print('*********************')
+                                    print(comment.body)
+                                    print('**********************')
+                                    print(comment.id)
                                                 
                                     message_list = open("comment_list.txt",'a+')
                                     message_list.write('\n' + author)
@@ -66,5 +70,5 @@ while (i>0):
                     except praw.exceptions.APIException as e:
                         if e.error_type == "NOT_WHITELISTED_BY_USER_MESSAGE":
                             print("Lol this user has a whitelist, there is no way to message them, giving up")
-
+    time.sleep(600)
     
