@@ -29,7 +29,7 @@ def check_author(author):
     file_read.close()
     
     return 0
-i = 50
+    i = 50
 
 subreddits = ['realonlyfansreviews','OnlyFansReviews']
 keywords = ['review','rate','filter']
