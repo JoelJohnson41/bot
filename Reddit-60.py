@@ -29,7 +29,7 @@ def check_author(author):
     file_read.close()
     
     return 0
-    i = 50
+i = 50
 
 subreddits = ['realonlyfansreviews','OnlyFansReviews']
 keywords = ['review','rate','filter']
@@ -55,7 +55,7 @@ while (i>0):
                                 if check2 == 0:
 
                                     print(comment.author)
-                                    reddit.redditor(author).message('Review', message)
+                                    #reddit.redditor(author).message('Review', message)
                                     
                                     print("Message sent")
                                                 
@@ -67,4 +67,4 @@ while (i>0):
                         if e.error_type == "NOT_WHITELISTED_BY_USER_MESSAGE":
                             print("Lol this user has a whitelist, there is no way to message them, giving up")
 
-    time.sleep(600)
+    
