@@ -13,7 +13,7 @@ user_agent = 'console: message_bot 1.0',
 username = 'Competitive-Hero608',
 password = 'johnson_chemistry11')
 
-temp = Template('Hey, I was scrolling through  $subreddit and noticed your comment. There is this site called https://fan.reviews, its a site where you can leave reviews on any influencer/creator/onlyfans model, etc. You should leave a review for someone there. Its a great way to let them know if they are awesome or not so awesome. Its like Yelp for Creators.')
+    temp = Template('Hey, I was scrolling through  $subreddit and noticed your comment. There is this site called https://fan.reviews, its a site where you can leave reviews on any influencer/creator/onlyfans model, etc. You should leave a review for someone there. Its a great way to let them know if they are awesome or not so awesome. Its like Yelp for Creators.')
 
 def check_author(author):
     
