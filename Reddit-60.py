@@ -80,7 +80,7 @@ while (i>0):
                                     if check3 == 0:
 
                                         print(comment.author)
-                                        #reddit.redditor(author).message('Review', message)
+                                        reddit.redditor(author).message('Review', message)
                                         
                                         print("Message sent")
                                         
