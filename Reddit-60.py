@@ -92,7 +92,7 @@ while (i>0):
                                         post_list = open("posts.txt",'a+')
                                         post_list.write('\n' + str(submission))
                                         post_list.close()
-                                        time.sleep(1)
+                                        time.sleep(3600)
                                         continue
                     except praw.exceptions.APIException as e:
                         if e.error_type == "NOT_WHITELISTED_BY_USER_MESSAGE":
