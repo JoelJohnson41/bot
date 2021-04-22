@@ -42,7 +42,7 @@ def check_submission(author,submission):
     file__read = open("posts.txt",'r+')
 
     for line in file__read.readlines():
-        if submission in posts.txt:
+        if submission in line:
             file__read.close()
             return 1
 
