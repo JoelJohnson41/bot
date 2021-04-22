@@ -98,3 +98,4 @@ while (i>0):
                         if e.error_type == "NOT_WHITELISTED_BY_USER_MESSAGE":
                             print("Lol this user has a whitelist, there is no way to message them, giving up")
    
+    time.sleep(600)
